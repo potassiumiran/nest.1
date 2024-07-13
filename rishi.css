@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #1e80e8, #6dd5fa); /* Blue gradient */
+    background-size: cover;
+    animation: gradientAnimation 15s ease infinite, lightning 5s ease infinite;
+    color: #fff; /* White text for better visibility */
+    position: relative;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes lightning {
+    0% {
+        opacity: 1;
+        filter: brightness(100%);
+    }
+    10% {
+        opacity: 0.8;
+        filter: brightness(150%);
+    }
+    20% {
+        opacity: 1;
+        filter: brightness(100%);
+    }
+    30% {
+        opacity: 0.9;
+        filter: brightness(140%);
+    }
+    40% {
+        opacity: 1;
+        filter: brightness(100%);
+    }
+    50% {
+        opacity: 0.7;
+        filter: brightness(130%);
+    }
+    60% {
+        opacity: 1;
+        filter: brightness(100%);
+    }
+    70% {
+        opacity: 0.8;
+        filter: brightness(150%);
+    }
+    80% {
+        opacity: 1;
+        filter: brightness(100%);
+    }
+    90% {
+        opacity: 0.9;
+        filter: brightness(140%);
+    }
+    100% {
+        opacity: 1;
+        filter: brightness(100%);
+    }
+}
+
+.profile {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333; /* Dark gray text */
+    max-width: 400px;
+    margin: 20px;
+}
+
+.profile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+}
+
+.profile:hover .name {
+    color: #1e80e8; /* Blue text on hover */
+}
+
+.profile:hover .description {
+    color: #666; /* Light gray text on hover */
+}
+
+.name {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666; /* Light gray text */
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.back-btn {
+    background-color: #1e80e8; /* Blue background */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #6dd5fa; /* Lighter blue on hover */
+    transform: scale(1.1);
+}

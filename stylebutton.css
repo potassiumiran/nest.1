@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Nasalization';
+    src: url('./nasalization-rg.otf');
+}
+
+body {
+    background-image: url('https://media.giphy.com/media/l0xx7wAHtPgNPEYQgB/giphy.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Nasalization';
+    color: #fff; /* Assuming white text for better visibility */
+}
+
+#johan, #riya, #nachi, #rishi {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+}
+
+#johan {
+    top: 30px;
+    left: 60px;
+}
+
+#riya {
+    top: 30px;
+    right: 60px;
+}
+
+#nachi {
+    bottom: 30px;
+    left: 60px;
+}
+
+#rishi {
+    bottom: 30px;
+    right: 60px;
+}
+
+#johan img, #riya img, #nachi img, #rishi img {
+    width: 200px;
+    height: 200px;
+    border-radius: 70px;
+    transition: transform 0.3s ease;
+}
+
+#johan button, #nachi button {
+    position: absolute;
+    top: 90px;
+    left: 230px;
+    background-color: #1e80e8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px; /* Rounded shape */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Nasalization';
+}
+
+#riya button, #rishi button {
+    position: absolute;
+    top: 90px;
+    right: 280px;
+    background-color: #1e80e8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px; /* Rounded shape */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Nasalization';
+}
+
+#johan button:hover, #nachi button:hover, #riya button:hover, #rishi button:hover {
+    background-color: #1377c9; /* Darker shade on hover */
+}
+
+#johan img:hover, #riya img:hover, #nachi img:hover, #rishi img:hover {
+    transform: scale(1.15);
+}
+
+h1 {
+    position: fixed;
+    top: 40%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h2 {
+    position: fixed;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

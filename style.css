@@ -1,0 +1,78 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    background-image: url(https://i.pinimg.com/originals/a5/85/67/a58567a4ba81b95d2c330dc90cc217dd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Header styles */
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Nasalization', sans-serif;
+    font-size: 36px;
+    color: #333; /* Dark color for better contrast */
+}
+
+/* Section styles */
+.intro, .hobbies, .projects {
+    max-width: 800px;
+    margin: 0 auto 20px; /* Centered with bottom margin */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+h2 {
+    font-size: 24px;
+    color: #333; /* Dark color for headings */
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    color: #666; /* Slightly darker text */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Project box styles */
+.project {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.project:hover {
+    transform: scale(1.02); /* Scale up on hover for slight zoom effect */
+}
+
+.project h3 {
+    font-size: 20px;
+    color: #333; /* Dark color for project titles */
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #666; /* Slightly darker text */
+    line-height: 1.6;
+}
